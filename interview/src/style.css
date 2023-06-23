@@ -1,0 +1,220 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+/*HOME*/
+.screen {
+  display: flex;
+  width: 375px;
+  height: 812px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 16px;
+  background: var(--background-2-static, #EDF0F3);
+}
+.view{
+  display: flex;
+  width: 375px;
+  height: 768px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.header {
+  display: flex;
+  padding: 48px 16px 12px 16px;
+  height: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  align-self: stretch;
+
+}
+.header-text{
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  color: #000;
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 40px;
+}
+.content{
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+  align-self: stretch;
+  overflow-y: auto;
+}
+.search{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px 8px 12px;
+  gap: 4px;
+  width: 100px;
+  height: 36px;
+  border: 1px solid rgba(0, 13, 26, 0.06);
+  border-radius: 28px;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+/*CARDS*/
+.cards{
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 16px;      
+  border-color: black;
+  border-width: 15px;
+  background: var(--background-1-static, #FFF);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 0.03);
+}
+.customer-name {
+  color: rgba(0, 0, 0, 0.7);
+
+}
+
+.project-name {
+font-size: 18px;
+color: rgba(0, 0, 0, 1);
+}
+
+.time-since-created {
+font-size: 14px;
+color: rgba(0, 0, 0, 0.5);
+}
+
+/*New project Button*/
+
+.new-project-container {
+  position: fixed;
+  bottom: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn-new-project{
+  width: 343px;
+  padding: 12px 28px 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 28px;
+  border: 1px solid var(--button-primary-border, rgba(255, 255, 255, 0.10));
+  background: var(--button-primary-background-static, #05F);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 0.03);
+}
+
+.btn-new-project:hover {
+  background-color: #0056b3;
+}
+
+.btn-new-project:active {
+  background-color: #003d80;
+  transform: translateY(1px);
+}
+
+/*POPUP*/
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-actions {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.form-actions button {
+  margin-left: 10px;
+}
+
+/*ICONS*/
+.main-navigation{
+  display: flex;
+  padding: 9px 24px;
+  align-items: flex-start;
+  gap: 4px;
+  align-self: stretch;
+  border-top: 1px solid var(--background-divider, rgba(0, 13, 26, 0.08));
+  background: var(--background-1-static, #FFF);
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex: 1 0 0;
+}

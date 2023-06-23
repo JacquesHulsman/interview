@@ -1,0 +1,20 @@
+ [
+    {
+      "id": 1,
+      "customerName": "James Bond",
+      "projectName": "Double Oh Seven",
+      "createdAt": "2023-06-20T10:30:00.000Z"
+    },
+    {
+      "id": 2,
+      "customerName": "James Bond",
+      "projectName": "Double Oh Seven",
+      "createdAt": "2023-06-20T10:30:00.000Z"    
+    },
+    {
+      "id": 3,
+      "customerName": "James Bond",
+      "projectName": "Double Oh Seven",
+      "createdAt": "2023-06-20T10:30:00.000Z"    
+    }
+  ]
